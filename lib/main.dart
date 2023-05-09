@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
     const channel = MethodChannel('souza.com.br/nativo');
 
     try {
-      final sum = await channel.invokeMethod('_calcSum', {"a": _a, "b": _b});
+      final sum = await channel.invokeMethod('calcSum', {"a": _a, "b": _b});
       setState(() {
         _sum = sum; 
       });
